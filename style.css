@@ -15,7 +15,6 @@ body {
 .form {
     width: 600px;
     margin: auto;
-    background-color: #26268ee3;
 }
 
 .form .title {
@@ -26,12 +25,18 @@ body {
 .form .container {
     max-width: 90%;
     margin: auto;
-    border: 1px dashed red;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #3a808fb1;
 }
 
 .form .container label {
     color: #fff;
     font-size: 16px;
+}
+
+.form .container p {
+    color: #fff;
 }
 
 .form .container .name,
@@ -45,7 +50,7 @@ body {
 .form .container .name input,
 .form .container .email input {
     height: 35px;
-    border-bottom: 2px solid #008000;
+    border-bottom: 2px solid #000;
     font-size: 16px;
     padding-left: 10px;
     color: #fff;
@@ -56,6 +61,7 @@ body {
     display: flex;
     flex-direction: column;
     gap: 5px;
+    margin-bottom: 20px;
 }
 
 .form .container .birth-date input {
@@ -64,5 +70,34 @@ body {
     padding-bottom: 3px;
     font-size: 16px;
     background-color: transparent;
-    color: rgb(208, 201, 201);
+    color: #d0c9c9;
 }
+
+.form .container .genre-select select {
+    width: 40%;
+    height: 30px;
+
+    margin-top: 5px;
+    border: 1.5px solid #000;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #01010177;
+}
+
+.form .container .occupation-area {
+    margin-top: 20px;
+}
+
+.form .container .occupation-area .area {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.form .container .occupation-area .area label {
+    color: #000;
+}
+
+
+
