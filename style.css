@@ -7,8 +7,9 @@
 }
 
 body {
-    background-color: #6cb49cce;
+    font-family: 'Poppins', sans-serif;
     height: 100vh;
+    background-color: #6cb49cce;
 }
 
 .form {
@@ -28,6 +29,11 @@ body {
     border: 1px dashed red;
 }
 
+.form .container label {
+    color: #fff;
+    font-size: 16px;
+}
+
 .form .container .name,
 .form .container .email {
     display: flex;
@@ -44,4 +50,19 @@ body {
     padding-left: 10px;
     color: #fff;
     background-color: transparent;
+}
+
+.form .container .birth-date {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form .container .birth-date input {
+    width: 30%;
+    border-bottom: 1px solid #c5c3c3;
+    padding-bottom: 3px;
+    font-size: 16px;
+    background-color: transparent;
+    color: #fff;
 }
