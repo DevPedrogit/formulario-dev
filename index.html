@@ -16,7 +16,8 @@
         <div class="container">
             <div class="name">
                 <label for="name">Nome</label>
-                <input type="text" id="name" name="name" minlength="3" required>
+                <input type="text" oninput="validation()" id="name" name="name" required>
+                <span style="color: red; display: none;" class="spanValidate">Precisa de pelo menos 3 caracteres!</span>
             </div>
             <div class="email">
                 <label for="email">Email</label>
