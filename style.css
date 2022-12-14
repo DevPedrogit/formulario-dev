@@ -86,7 +86,7 @@ body {
 }
 
 .form .container .occupation-area {
-    margin-top: 20px;
+    margin: 20px 0;
 }
 
 .form .container .occupation-area .area {
@@ -97,5 +97,19 @@ body {
 
 .form .container .occupation-area .area label {
     color: #000;
+}
+
+.form .container .hardskills-area {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.form .container .hardskills-area textarea {
+    border-radius: 8px;
+    padding-left: 5px;
+    padding-top: 5px;
+
+    font-size: 16px;
 }
 
