@@ -16,12 +16,13 @@
         <div class="container">
             <div class="name">
                 <label for="name">Nome</label>
-                <input type="text" oninput="validation()" id="name" name="name" required>
-                <span style="color: red; display: none;" class="spanValidate">Precisa de pelo menos 3 caracteres!</span>
+                <input type="text" oninput="validationName()" id="name" name="name">
+                <span style="color: red; display: none;" class="spanValidateName">Precisa de pelo menos 3 caracteres!</span>
             </div>
             <div class="email">
                 <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" oninput="validationEmail()" id="email" name="email">
+                <span style="color: red; display: none;" class="spanValidateEmail">Email invalido!</span>
             </div>
             <div class="birth-date">
                 <label for="date">Data de nascimento</label>
@@ -56,7 +57,7 @@
                 <textarea id="hardskills" name="hardskills" cols="30" rows="5" required></textarea>
             </div>
             <div class="btn-submit">
-                <input type="submit" id="submit" name="submit">
+                <input type="submit" id="submit" name="submit" disabled>
             </div>
         </div>
     </form>
